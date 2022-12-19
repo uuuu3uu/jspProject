@@ -9,11 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import member.MemIdCheckCommand;
-import member.MemJoinOkCommand;
-import member.MemLoginOkCommand;
-import member.MemLogoutCommand;
-
 @SuppressWarnings("serial")
 @WebServlet("*.book")
 public class BookController extends HttpServlet {
@@ -29,7 +24,7 @@ public class BookController extends HttpServlet {
 			viewPage += "/bookCheck.jsp";
 		}
 		else if(com.equals("/bookCheckOk")) {
-			command = new bookCheckCommand();
+			command = new BookCheckCommand();
 			command.execute(request, response);
 			viewPage = "/include/message.jsp";
 		}

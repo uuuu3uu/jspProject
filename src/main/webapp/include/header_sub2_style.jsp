@@ -105,7 +105,7 @@
 	}
 	
 	.joinWrap {
-	  	margin: 100px 300px;
+	  margin: 100px 300px;
 	  }
 	.joinWrap h2 {
 		font-family: Cormorant,serif;
@@ -147,5 +147,108 @@
     margin: 25px 0;
 	}
 	
+	/* 예약하기 */
+	.bookCheckWrap {
+		margin: 100px 300px;
+	}
+	.bookCheckWrap h2 {
+		font-family: Cormorant,serif;
+    letter-spacing: .01em;
+    color: #363636;
+    font-size: 42px;
+    line-height: 1.1667em;
+    font-weight: 600;
+    margin: 25px 0;
+	}
 	
+	.input-group input {
+		magin: 10px;
+	}
+	.input-group .btn {
+		width: 150px;
+	}
+	.input-group .btn:hover { 
+		background-color:#aaa;
+	}
+	.input-group .btnOk {
+		top: 100px;
+		width: 300px;
+	}
+	/* my account */
+	.myAccountWrap {
+		margin: 100px 300px;
+	}
+	.myAccountWrap h2 {
+		font-family: Cormorant,serif;
+    letter-spacing: .01em;
+    color: #363636;
+    font-size: 42px;
+    line-height: 1.1667em;
+    font-weight: 600;
+    margin: 25px 0;
+	}
+	
+	
+	
+	.box-container {
+		margin-bottom: 60px;
+    border: 1px solid #ddd;
+    /* padding: 40px 150px 22px;  */
+    background-color: #fff;
+  	color: #000;
+	}
+	
+	.box-container-inner {
+		display: flex;	
+		flex-wrap: nowrap;
+		margin: 20px 60px;
+	}
+	
+	.level-circle {
+    
+    width: 120px;
+    height: 120px;
+    padding: 30px 0;
+    border-radius: 50%;
+    border: 6px solid #fdb812;
+    box-sizing: border-box;
+    color: #222;
+    text-align: center;
+	}
+	
+	.box-content {
+		margin-left: 150px;
+		
+	}
+	
+	
+	.vl {
+  border-left: 1px solid #ccc;
+  height: 120px;
+ 
+  
+  }
+  
+  .box-content1 .table td{
+  	border-top: none;
+  }
+ 	
+ 	.box-container-inner2 {
+ 		margin: 50px;
+ 	}
+ 	
+ 	/* 회원정보 수정하기 */
+ 	.UpdateWrap {
+ 		margin: 100px 300px;
+	}
+	.UpdateWrap h2 {
+		font-family: Cormorant,serif;
+    letter-spacing: .01em;
+    color: #363636;
+    font-size: 42px;
+    line-height: 1.1667em;
+    font-weight: 600;
+    margin: 25px 0;
+	}
+ 	}
 </style>

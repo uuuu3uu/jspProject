@@ -46,6 +46,29 @@ public class MemController extends HttpServlet {
 			command.execute(request, response);
 			viewPage += "/memIdCheck.jsp";
 		}
+		else if(com.equals("/memMyAccount")) {
+			command = new MemMyAccountCommand();
+			command.execute(request, response);
+			viewPage += "/memMyAccount.jsp";
+		}
+		else if(com.equals("/memPwdCheck")) {
+			viewPage += "/memPwdCheck.jsp";
+		}
+		else if(com.equals("/memPwdCheckOk")) {
+			command = new MemPwdCheckOkCommand();
+			command.execute(request, response);
+			viewPage = "/include/message.jsp";
+		}
+		else if(com.equals("/memUpdate")) {
+			command = new MemUpdateCommand();
+			command.execute(request, response);
+			viewPage += "/memUpdate.jsp";
+		}
+		else if(com.equals("/memUpdateOk")) {
+			command = new MemUpdateOkCommand();
+			command.execute(request, response);
+			viewPage = "/include/message.jsp";
+		}
 		
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);

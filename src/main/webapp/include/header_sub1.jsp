@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
   <title>title</title>
-  <jsp:include page="../../include/bs4.jsp"></jsp:include>
+  <jsp:include page="/include/bs4.jsp"></jsp:include>
 </head>
 <body>
 <p><br/></p>

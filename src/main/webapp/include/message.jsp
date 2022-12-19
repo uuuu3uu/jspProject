@@ -21,8 +21,8 @@
   	else if(msg == "idCheckNO") msg = "중복된 아이디 입니다";
   	else if(msg == "memJoinOK") msg = "정상적으로 회원가입이 되었습니다";
   	else if(msg == "memJoinNO") msg = "회원가입 실패";
-  	/* else if(msg == "passwordNO") msg = "비밀번호 확인하세요";
-  	else if(msg == "passwordOK") msg = "비밀번호를 변경하였습니다"; */
+  	else if(msg == "passwordNO") msg = "비밀번호를 다시 확인하세요";
+  	else if(msg == "passwordYES") msg = "회원정보 변경페이지로 이동합니다";
   	
   	
   	alert(msg);

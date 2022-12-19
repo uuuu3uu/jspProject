@@ -98,4 +98,30 @@ public class MemberDAO {
 		}
 		return res;
 	}
+	
+	// 회원정보 수정하기 dd d
+	public int setMemberUpdateOk(MemberVO vo) {
+		int res = 0;
+		try {
+			sql = "update member set name=?, tel=?, birthday=?,"
+					+ "gender=?, email=?, address=?, path=? where mid=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, vo.getName());
+			pstmt.setString(2, vo.getTel());
+			pstmt.setString(3, vo.getBirthday());
+			pstmt.setString(4, vo.getBirthday());
+			pstmt.setString(5, vo.getGender());
+			pstmt.setString(6, vo.getEmail());
+			pstmt.setString(7, vo.getAddress());
+			pstmt.setString(8, vo.getPath());
+			pstmt.executeUpdate();
+			res = 1;	
+		} catch (SQLException e) {
+			System.out.println("SQL 에러 : " + e.getMessage());
+		} finally {
+			getConn.rsClose();
+		}
+		
+		return res;
+	}
 }

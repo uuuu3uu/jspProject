@@ -12,6 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
   
   <jsp:include page="/include/bs4.jsp"></jsp:include>
     <jsp:include page="/include/main_style.jsp"/>
@@ -35,7 +37,8 @@
 				</div>
 				<div class="col-sm-4" style="justify-content: flex-end; display: flex">
 						<c:if test="${!empty sLevel}">
-							<span style="margin:25px 15px 0 20px;"><font color="orange"><b>${sName}</b></font>님 환영합니다!</span>
+							<a href="${ctp}/memMyAccount.mem" style="margin:25px 0px 0px 0px;" ><i class="material-icons">&#xe853;</i></a>
+							<span style="margin:25px 15px 0 10px;"><font color="orange"><b>${sName}</b></font>님 환영합니다!</span>
 						</c:if>
 						<c:if test="${!empty sLevel}">
 							<a href="${ctp}/bookCheck.book" style="margin-bottom:24px; border-bottom: 1px solid #000;">BOOK NOW</a>
